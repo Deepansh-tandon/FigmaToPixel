@@ -16,7 +16,7 @@ export default function Nav() {
 
       {/* Navigation Links + CTA Button */}
       <div className="flex items-center gap-8">
-        <ul className="flex items-center gap-10 font-[family-name:var(--font-plus-jakarta-sans)] text-[15px] font-semibold leading-[100%] tracking-[0%]">
+        <ul className="flex items-center gap-10 font-[family-name:var(--font-plus-jakarta-sans)] text-[15px] font-semibold leading-[100%] tracking-[0%] ">
           <li className="cursor-pointer  transition-colors">
             How It Works
           </li>
