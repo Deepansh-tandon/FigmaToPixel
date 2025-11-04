@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -90,19 +91,50 @@ export default function Footer() {
                 About
               </h3>
               <ul className="flex flex-col gap-2 md:gap-2.5">
-                {['Our Process', 'How We Work', 'Contact', 'FAQs'].map((item) => (
-                  <li key={item}>
-                    <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors" style={{
-                      fontFamily: 'Plus Jakarta Sans',
-                      fontWeight: 500,
-                      fontSize: '14px',
-                      lineHeight: '31px',
-                      letterSpacing: '0%',
-                    }}>
-                      {item}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors" style={{
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontWeight: 500,
+                    fontSize: '14px',
+                    lineHeight: '31px',
+                    letterSpacing: '0%',
+                  }}>
+                    Our Process
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors" style={{
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontWeight: 500,
+                    fontSize: '14px',
+                    lineHeight: '31px',
+                    letterSpacing: '0%',
+                  }}>
+                    How We Work
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors" style={{
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontWeight: 500,
+                    fontSize: '14px',
+                    lineHeight: '31px',
+                    letterSpacing: '0%',
+                  }}>
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <Link href="/faq" className="text-gray-600 hover:text-gray-900 transition-colors" style={{
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontWeight: 500,
+                    fontSize: '14px',
+                    lineHeight: '31px',
+                    letterSpacing: '0%',
+                  }}>
+                    FAQs
+                  </Link>
+                </li>
               </ul>
             </div>
 

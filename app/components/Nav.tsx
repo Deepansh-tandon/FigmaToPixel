@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Nav() {
@@ -13,7 +14,7 @@ export default function Nav() {
   return (
     <nav className="w-full mx-auto px-4 md:px-6 lg:px-[80px] py-4 flex items-center justify-between relative">
       {/* Logo */}
-      <div className="flex items-center gap-2">
+      <Link href="/" className="flex items-center gap-2">
         <Image
           src="/Logo.svg"
           alt="LaunchPad Labs"
@@ -21,7 +22,7 @@ export default function Nav() {
           height={49}
           className="w-full h-full object-contain"
         />
-      </div>
+      </Link>
 
       {/* Hamburger Menu Button - Visible on small and medium screens */}
       <button
@@ -50,19 +51,19 @@ export default function Nav() {
       <div className="hidden lg:flex items-center gap-8">
         <ul className="flex items-center gap-10 font-[family-name:var(--font-plus-jakarta-sans)] text-[15px] font-semibold leading-[100%] tracking-[0%] ">
           <li className="cursor-pointer  transition-colors">
-            How It Works
+            <Link href="/">How It Works</Link>
           </li>
           <li className="cursor-pointer  transition-colors">
-            Our Work
+            <Link href="/work">Our Work</Link>
           </li>
           <li className="cursor-pointer      transition-colors">
-            Our Process
+            <Link href="/">Our Process</Link>
           </li>
           <li className="cursor-pointer  transition-colors">
-            Founder
+            <Link href="/founder">Founder</Link>
           </li>
           <li className="cursor-pointer  transition-colors">
-            Pricing
+            <Link href="/pricing">Pricing</Link>
           </li>
         </ul>
 
@@ -75,22 +76,22 @@ export default function Nav() {
 
       {/* Mobile Menu - Visible on small/medium screens when toggled */}
       {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white shadow-lg lg:hidden z-50">
+        <div className="absolute top-full left-0 right-0 bg-[var(--background)] shadow-lg lg:hidden z-50">
           <ul className="flex flex-col px-4 py-4 gap-4 font-[family-name:var(--font-plus-jakarta-sans)] text-[15px] font-semibold leading-[100%] tracking-[0%]">
             <li className="cursor-pointer transition-colors py-2">
-              How It Works
+              <Link href="/">How It Works</Link>
             </li>
             <li className="cursor-pointer transition-colors py-2">
-              Our Work
+              <Link href="/work">Our Work</Link>
             </li>
             <li className="cursor-pointer transition-colors py-2">
-              Our Process
+              <Link href="/">Our Process</Link>
             </li>
             <li className="cursor-pointer transition-colors py-2">
-              Founder
+              <Link href="/founder">Founder</Link>
             </li>
             <li className="cursor-pointer transition-colors py-2">
-              Pricing
+              <Link href="/pricing">Pricing</Link>
             </li>
           </ul>
           <div className="px-4 pb-4">

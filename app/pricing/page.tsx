@@ -23,11 +23,10 @@ export default function PricingPage() {
 
             {/* Main Heading */}
             <h1
-              className="mb-3"
+              className="mb-3 text-xl md:text-2xl lg:text-[28px] px-4"
               style={{
                 fontFamily: 'Plus Jakarta Sans',
                 fontWeight: 600,
-                fontSize: '28px',
                 lineHeight: '31px',
                 letterSpacing: '0%',
                 color: 'rgba(32, 32, 32, 1)',
@@ -38,10 +37,10 @@ export default function PricingPage() {
 
             {/* Subtitle */}
             <p
+              className="text-sm md:text-base lg:text-[16px] px-4"
               style={{
                 fontFamily: 'Plus Jakarta Sans',
                 fontWeight: 500,
-                fontSize: '16px',
                 lineHeight: '31px',
                 letterSpacing: '0%',
                 color: 'rgba(82, 82, 82, 1)',
@@ -52,20 +51,20 @@ export default function PricingPage() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  max-w-6xl mx-auto items-start px-36 py-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-4 max-w-6xl mx-auto items-start px-4 md:px-12 lg:px-36 py-6 md:py-8 lg:py-10">
             {/* Left Card: Payment Box */}
-            <div>
+            <div className="w-full max-w-md mx-auto lg:max-w-none">
               <Image
                 src="/boxes/Frame 667.svg"
                 alt="Payment Box"
                 width={500}
                 height={800}
-                className="w-full lg:w-97 h-auto rounded-2xl object-contain"
+                className="w-full h-auto rounded-2xl object-contain"
               />
             </div>
 
             {/* Right Card: Aymen Box */}
-            <div className="lg:-mt-10">
+            <div className="w-full max-w-md mx-auto lg:max-w-none lg:-mt-10">
               <Image
                 src="/boxes/Group 1707483687.svg"
                 alt="Aymen Box"

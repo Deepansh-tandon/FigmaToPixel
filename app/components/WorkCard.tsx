@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface WorkCardProps {
   title: string;
@@ -70,29 +71,31 @@ export default function WorkCard({ title, description, tags, imageUrl, imageAlt 
         </div>
 
         {/* View Case Study Button */}
-        <div
-          className="self-start rounded-full p-[2px]"
-          style={{
-            background: 'linear-gradient(90deg, #9CC6FF 0%, #00D0FF 100%)',
-          }}
-        >
-          <button
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white"
+        <Link href="/flow" className="self-start">
+          <div
+            className="rounded-full p-[2px]"
             style={{
-              fontFamily: 'Plus Jakarta Sans',
-              fontWeight: 500,
-              fontSize: '16px',
-              lineHeight: '24px',
-              letterSpacing: '0%',
-              color: 'rgba(0, 0, 0, 1)',
+              background: 'linear-gradient(90deg, #9CC6FF 0%, #00D0FF 100%)',
             }}
           >
-            View Case Study
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12L12 4M12 4H8M12 4V8" stroke="rgba(0, 0, 0, 1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
-        </div>
+            <button
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-white"
+              style={{
+                fontFamily: 'Plus Jakarta Sans',
+                fontWeight: 500,
+                fontSize: '16px',
+                lineHeight: '24px',
+                letterSpacing: '0%',
+                color: 'rgba(0, 0, 0, 1)',
+              }}
+            >
+              View Case Study
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12L12 4M12 4H8M12 4V8" stroke="rgba(0, 0, 0, 1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </Link>
       </div>
 
       {/* Right Section - Image Placeholder */}
