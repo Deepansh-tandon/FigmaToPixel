@@ -59,7 +59,7 @@ export default function PricingPage() {
                 alt="Payment Box"
                 width={500}
                 height={800}
-                className="w-full h-auto rounded-2xl object-contain"
+                className="w-full h-auto lg:w-97 rounded-2xl object-contain"
               />
             </div>
 
