@@ -4,6 +4,10 @@ import ImpactSection from "./components/ImpactSection";
 import OurWorkSection from "./components/OurWorkSection";
 import WhyLaunchPadSection from "./components/WhyLaunchPadSection";
 import OurApproachSection from "./components/OurApproachSection";
+import LaunchPadProcessSection from "./components/LaunchPadProcessSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import BookingSection from "./components/BookingSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +22,10 @@ export default function Home() {
       <OurWorkSection />
       <WhyLaunchPadSection />
       <OurApproachSection />
+      <LaunchPadProcessSection />
+      <TestimonialsSection />
+      <BookingSection />
+      <Footer />
     </div>
   );
 }
