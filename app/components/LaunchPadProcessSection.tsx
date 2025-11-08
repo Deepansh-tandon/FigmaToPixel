@@ -63,9 +63,9 @@ export default function LaunchPadProcessSection() {
 
         {/* Two larger cards grid */}
         <div className="mt-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1200px] mx-auto justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[1200px] mx-auto justify-items-center">
           {/* Card 4 */}
-          <div className="bg-white w-[360px] h-[300px] md:w-[565px] md:h-[419px] rounded-2xl border border-gray-200 overflow-hidden flex flex-col flex-shrink-0 relative z-10" 
+          <div className="bg-white w-[360px] h-[300px] sm:w-[400px] sm:h-[400px]  lg:w-[560px] lg:h-[419px] rounded-2xl border border-gray-200 overflow-hidden flex flex-col flex-shrink-0 relative z-10" 
                style={{ boxShadow: '0 4px 30px 0 rgba(0, 0, 0, 0.15)' }}>
             <div className="flex items-center justify-center p-2 flex-1 relative">
               <Image src="/boxes/Group 1707483676.svg" alt="Card 4" width={551} height={402} className="w-full h-full object-contain relative z-10" style={{ filter: 'drop-shadow(0 2px 21px rgba(0, 0, 0, 0.05))' }} />
@@ -73,7 +73,7 @@ export default function LaunchPadProcessSection() {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-white w-[360px] h-[300px] md:w-[565px] md:h-[418px] rounded-2xl border border-gray-200 overflow-hidden flex flex-col flex-shrink-0 relative z-10" 
+          <div className="bg-white w-[360px] h-[300px] lg:w-[560px] sm:w-[400px] sm:h-[400px] lg:h-[418px] rounded-2xl border border-gray-200 overflow-hidden flex flex-col flex-shrink-0 relative z-10" 
                style={{ boxShadow: '0 4px 30px 0 rgba(0, 0, 0, 0.15)' }}>
             <div className="flex items-center justify-center p-2 flex-1 relative">
               <Image src="/boxes/Group 1707483677.svg" alt="Card 5" width={551} height={404} className="w-full h-full object-contain relative z-10" style={{ filter: 'drop-shadow(0 2px 21px rgba(0, 0, 0, 0.05))' }} />
